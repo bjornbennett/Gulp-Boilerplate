@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "Boilerplate for Gulp",
   "dependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.5",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "tar": "^4.4.8"
   },
   "devDependencies": {
     "gulp": "^4.0.0"
