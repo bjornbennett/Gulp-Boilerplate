@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	htmlmin = require('gulp-htmlmin'),
 	uglify = require('gulp-uglify'),
@@ -18,7 +18,7 @@ gulp.task('html', () => {
     .pipe(gulp.dest('./src'));
 });
 
-gulp.task('sass', function () {
+gulp.task('sass', () => {
 	return gulp.src(sassSource)
     .pipe(sass({ outputStyle:'nested' }).on('error', sass.logError))
 	.pipe(autoprefixer({
@@ -29,7 +29,7 @@ gulp.task('sass', function () {
 	.pipe(browserSync.stream());
 });
 
-gulp.task('js', function(cb) {
+gulp.task('js', (cb) => {
 	pump([
 		gulp.src(jsSource),
 		//uglify(),
@@ -39,7 +39,7 @@ gulp.task('js', function(cb) {
 	);
 });
 
-gulp.task('serve', function(){
+gulp.task('serve', () => {
 	browserSync.init({
         server: {
             baseDir: "./src"
