@@ -7,7 +7,7 @@ const gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	pump = require('pump');
  
-const sassSource = './src/assets/stylesheets/sass/*.sass',
+const sassSource = './src/assets/stylesheets/sass/*.scss',
 	  sassDestSource = './src/assets/stylesheets/',
 	  jsSource = './src/assets/javascripts/*.js',
 	  jsDestSource = './src/assets/javascripts/';
