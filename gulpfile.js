@@ -1,5 +1,5 @@
 const gulp = require('gulp'),
-	sass = require('gulp-sass'),
+	sass = require('gulp-sass')(require('sass')),
 	htmlmin = require('gulp-htmlmin'),
 	uglify = require('gulp-uglify'),
 	autoprefixer = require('gulp-autoprefixer'),
