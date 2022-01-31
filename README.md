@@ -2,13 +2,11 @@
 
 This boilerplate was created to quickly setup an environment that included a live server, sass, html/js/css minifiers, and an autoprefixer. It uses Gulp.js as the task runner.
 
-Before using this, you will need to run 
+Once cloned, `run npm install` to install the project dependencies:
 
 ```
-npm init
+npm install
 ```
-
-This will install the necessary modules.
 
 Once you have installed all of the node modules, type gulp in the terminal to start.
 
