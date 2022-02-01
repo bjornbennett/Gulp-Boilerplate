@@ -20,9 +20,9 @@ gulp.task('html', () => {
 
 gulp.task('sass', () => {
 	return gulp.src(sassSource)
-    .pipe(sass({ outputStyle:'nested' }).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
 	.pipe(autoprefixer({
-		browsers: ['last 2 versions'],
+		Browserslist: ['last 2 versions'],
         cascade: false 
     }))
     .pipe(gulp.dest(sassDestSource))

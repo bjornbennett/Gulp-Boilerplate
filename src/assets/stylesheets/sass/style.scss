@@ -1,14 +1,122 @@
+@import 'globals';
 @import 'reset';
 @import 'mixins';
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap');
+
+
+/*======================================= 
+  GLOBAL
+=======================================*/
+.bg {
+	&-purple {
+		background-color: $purple;
+	}
+	&-magenta {
+		background-color: $magenta;
+	}
+}
+
+.color {
+	&-white {
+		color: $white;
+	}
+	&-text-color {
+		color: $text-color;
+	}
+	&-purple {
+		color: $purple;
+	}
+	&-magenta {
+		color: $magenta;
+	}
+}
+
+.button {
+	text-decoration: none;
+	padding: 0.5rem 2rem;
+	border-radius: 20px;
+	overflow: hidden;
+	font-size: 0.8rem;
+}
+
+* {
+	font-family: 'gilroylight', arial, sans-serif !important;
+	box-sizing: border-box;
+}
+
 
 body {
-	font-family: 'Nunito Sans', arial, sans-serif;
+	font-family: 'gilroylight', arial, sans-serif;
 	font-size: 16px;
 	font-weight: 300;
+	color: $text-color;
 }
 
 #document {
 	max-width: 1080px;
 	margin: 0 auto;
+}  
+
+h2 {
+	font-size: 3rem;
+}
+
+
+.mfp-content {
+	max-width: 968px;
+	width: 100%;
+	margin: 0 auto;
+
+	> * {
+		width: 100%;
+	}
+}
+
+#header {
+	padding: 2rem 0 5rem;
+	position: relative;
+	z-index: 2;
+
+	.container {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+
+		h1 {
+			align-self: flex-start;
+			// background-color: #e2e2e2;
+			margin: 0;
+
+			img.logo {
+				width: 200px;
+				display: block;
+			}
+		}
+		
+		ul {
+			display: flex;
+			align-items: center;
+			align-self: flex-end;
+			margin: 0;
+			padding: 0;
+
+			li {
+				list-style-type: none;
+				display: inline-block;
+
+				a {
+					text-decoration: none;
+					color: $text-color;
+					display: block;
+
+					&:not(.button){
+						padding: 0rem 1rem;
+					}
+
+					&.button {
+						color: $white;
+					}
+				}
+			}
+		}
+	}
 }

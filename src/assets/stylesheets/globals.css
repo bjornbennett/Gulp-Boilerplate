@@ -1,0 +1,12 @@
+/*======================================= 
+  VARIABLES
+=======================================*/
+/*======================================= 
+  FONTS
+=======================================*/
+@font-face {
+  font-family: "gilroylight";
+  src: url("../fonts/gilroy-light-webfont.woff2") format("woff2"), url("../fonts/gilroy-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
